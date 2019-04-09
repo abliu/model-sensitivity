@@ -30,7 +30,7 @@ summary(res_cox_primary_outcome)
 # Wald test            = 10.92  on 1 df,   p=0.0009537
 # Score (logrank) test = 10.99  on 1 df,   p=0.0009172
 
-# calculate hazard ratio for primary outcome
+# calculate hazard ratio for death
 res_cox_death = coxph(Surv(time = T_DEATH, event = EVENT_DEATH) ~ INTENSIVE, coxph_df)
 summary(res_cox_death)
 # Call:
